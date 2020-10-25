@@ -21,8 +21,8 @@ public class AppApplication implements CommandLineRunner {
 		repository.deleteAll();
 
 		// save a couple of customers
-		repository.save(new Customer("Alice", "Smith"));
-		repository.save(new Customer("Bob", "Smith"));
+		repository.save(new Customer("Alice", "Smith", 0));
+		repository.save(new Customer("Bob", "Smith", 0));
 
 		// fetch all customers
 		System.out.println("Customers found with findAll():");

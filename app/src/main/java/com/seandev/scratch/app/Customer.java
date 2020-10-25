@@ -9,12 +9,22 @@ public class Customer {
 
   public String firstName;
   public String lastName;
+  public int count;
 
   public Customer() {}
 
-  public Customer(String firstName, String lastName) {
+  public Customer(String firstName, String lastName, int count) {
     this.firstName = firstName;
     this.lastName = lastName;
+    this.count = count;
+  }
+  
+  public void increment() {
+	  count ++;
+  }
+  
+  public void decrement() {
+	  count --;
   }
 
   @Override
